@@ -1,0 +1,50 @@
+/* _________ Google Font _________ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+/* Colors */
+
+:root{
+  --primaryColor: #E2DED0;
+  --secondaryColor: #4E4F50;
+  --gray: #4E4F50;
+  --blueGray:#647C90;
+  --textColor: #C0C0C0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* _________ Pre CSS _________ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #eeede7;
+  font-weight: 600;
+}
+
+h3,
+h4 {
+  font-size: 2 rem;
+}
+
+h5,
+h6 {
+  font-size: 1.3 rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+}
