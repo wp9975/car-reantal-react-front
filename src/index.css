@@ -3,6 +3,7 @@
 
 /* Colors */
 
+
 :root{
   --primaryColor: #E2DED0;
   --secondaryColor: #4E4F50;
@@ -12,11 +13,17 @@
 }
 
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
+  /* max-width: 1800px; */
+  align-content: center;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+
+  
+
 
 /* _________ Pre CSS _________ */
 

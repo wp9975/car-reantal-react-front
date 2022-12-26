@@ -1,0 +1,26 @@
+.footer{
+    width: 100vw;
+    bottom: 0;
+    background-color: var(--secondaryColor);
+    padding: 10px;
+    text-align: center;
+    color: var(--textColor);
+
+    
+}
+
+
+.foot{
+    border-top: 2px solid white;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.foot a{
+    color: var(--textColor);
+    text-decoration: underline;
+}
+
+.foot a:hover{
+    color: white;
+}

@@ -1,0 +1,43 @@
+.our_story{
+    min-height: 400px;
+    background: url('../../assets/img/headercarousel/audi.jpg') no-repeat right;
+    background-size: 60%;
+    background-color: var(--secondaryColor);
+    padding: 100px 0;
+
+}
+
+.story{
+    width: 60%;
+    float: left;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.80);
+    animation: move 1s linear;
+}
+
+@media screen and (max-width:992px) {
+
+    .our_story{
+        background: url('../../assets/img/headercarousel/audi.jpg') no-repeat top;
+        background-color: var(--secondaryColor);
+        background-size: 100%;
+        padding: 70px 20px;
+    }
+
+    .story{
+        margin-top: 35%;
+        width: 90%;
+        padding: 30px;
+    }
+    
+}
+
+
+@keyframes move{
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
