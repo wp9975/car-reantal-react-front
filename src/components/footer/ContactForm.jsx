@@ -1,11 +1,11 @@
 import React from 'react'
-import classes from './contactform.module.css';
+import classes from './footer.module.css';
 
 const ContactForm = () => {
   return (
-    <div className={classes.container}>
-        <h3>Masz pytanie?</h3>
-        <h5>Napisz do nas:</h5>
+    <div className={classes.contact_form}>
+        <h2>Masz pytanie?</h2>
+        <h3>Napisz do nas:</h3>
         <div className={classes.form}>
         <form>
         <input type="text" name="name" id="name" placeholder="Imię" required/>
