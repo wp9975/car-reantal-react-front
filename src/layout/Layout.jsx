@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 
-import Footer from '../components/footer/Footer'
+import Footer from '../components/Footer/Footer'
 import Routes from '../config/Routes'
-import Nav from '../components/navigation/Nav'
+import Nav from '../components/Navigation/Nav'
 const Layout = () => {
   return (
     <Fragment>

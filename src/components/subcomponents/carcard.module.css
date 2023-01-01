@@ -1,0 +1,47 @@
+.container{  
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image img{
+    width: 30vw;
+}
+
+.info{
+    background: var(--blueGray);
+}
+
+.info h4{
+    text-align: right;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    background: lightgray;
+}
+
+.name{
+ padding: 5px;
+}
+
+.value{
+    color: #636666;
+    font-weight: 700;
+    padding: 5px;
+}
+
+@media screen and (max-width:992px) {
+    .image img{
+        width: 100vw;
+        vertical-align: middle;
+    }
+
+    .info{
+        width: 100vw;
+    }
+
+}

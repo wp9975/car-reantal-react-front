@@ -1,0 +1,11 @@
+.container{
+    max-width: 1600px;
+    align-content: space-between;
+    margin: auto;
+    display: flex;
+}
+
+.car_img img{
+    width: 300px;
+    height: auto;
+}

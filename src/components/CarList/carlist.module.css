@@ -36,11 +36,14 @@
 
 .informations{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .info_item{
     background-color: whitesmoke;
+    flex: 1 0 30%;
+    margin: 5px;
     padding: 10px;
 }
 

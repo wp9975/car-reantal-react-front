@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./carlist.module.css";
-import CarsData from "./CarsData";
-import { GiChemicalTank, GiGearStickPattern, GiCarDoor } from "react-icons/gi";
+import CarsData from "../../assets/data/CarsData";
+import { GiChemicalTank, GiGearStickPattern, GiCarDoor, GiCalendar, GiCityCar, GiCarSeat } from "react-icons/gi";
 
 const CarList = () => {
+
   return (
     <div className={classes.container}>
       {CarsData.map((item, index) => (
@@ -20,13 +22,16 @@ const CarList = () => {
             </div>
 
             <div className={classes.informations}>
+              <div className={classes.info_item}><GiCalendar/>{item.year}</div>              
               <div className={classes.info_item}><GiChemicalTank/>{item.fuel}</div>
               <div className={classes.info_item}><GiGearStickPattern/>{item.gearbox}</div>
               <div className={classes.info_item}><GiCarDoor/>{item.doors}</div>
+              <div className={classes.info_item}><GiCarSeat/>{item.seat}</div>
+              <div className={classes.info_item}><GiCityCar/>{item.type}</div>
             </div>
-            <a href="#" className={classes.button_details}>
+            <Link to={`/carlist/${item.detailsLink}`} className={classes.button_details}>
               Więcej
-            </a>
+            </Link>
           </div>
         </div>
       ))}
