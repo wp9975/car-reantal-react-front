@@ -1,0 +1,95 @@
+/* _______ Contact __________ */
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px grey;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  
+  .contact_details {
+    padding: 10px;
+    margin: auto;
+  }
+  
+  .contact_details h1 {
+    padding: 10px;
+  }
+  
+  .contact_li {
+    margin: 5px;
+    padding: 10px;
+    background-color: grey;
+  }
+  
+  /* __________ Map _____________ */
+  
+  .map {
+  }
+  
+  /* _______ Form ___________ */
+  
+  .contact_form {
+    margin: auto;
+    max-width: 600px;
+    border-left: 2px solid whitesmoke;
+  }
+  
+  .container h3,
+  h5 {
+    padding: 5px;
+  }
+  
+  .form {
+    padding: 10px;
+  }
+  
+  .form textarea,
+  input {
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid black;
+    font-size: 14px;
+    resize: none;
+  }
+  
+  .form button {
+    padding: 5px;
+    color: black;
+    background-color: white;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+  }
+
+  
+@media screen and (max-width: 992px) {
+    .form input,
+    textarea {
+      margin: auto;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+  
+    .form {
+      width: 100vw;
+    }
+  
+    .contact {
+      margin: auto;
+    }
+  
+    .contact_form {
+      border: none;
+      border-top: 2px solid whitesmoke;
+    }
+  
+    .map {
+      width: 100vw;
+    }
+  }
+  

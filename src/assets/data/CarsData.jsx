@@ -1,4 +1,5 @@
 import audipic from '../../assets/img/headercarousel/audi.jpg'
+import golfpic from '../../assets/img/headercarousel/golf.jpg'
 
 const CarsData = [
     {
@@ -15,16 +16,8 @@ const CarsData = [
         year: '2014',
         imgSrc: audipic,
         detailsLink: 'bmwx3'
-    },
-    {
-        brand:'VolksWagen',
-        model:'Golf V',
-        fuel:'Benzyna',
-        doors: 5,
-        category:'Basic',
-        gearbox:'Manualna',
-        imgSrc: audipic
     }
+   
 ]
 
 export default CarsData;

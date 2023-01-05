@@ -30,7 +30,7 @@ const CarList = () => {
               <div className={classes.info_item}><GiCityCar/>{item.type}</div>
             </div>
             <Link to={`/carlist/${item.detailsLink}`} className={classes.button_details}>
-              Więcej
+              Wynajmij 
             </Link>
           </div>
         </div>

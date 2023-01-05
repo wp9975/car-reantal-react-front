@@ -15,12 +15,20 @@
     border: 1px solid #d7d7dd;
     border-radius: 10px;
     overflow: hidden;
-    
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+}
+
+.car_card:hover{
+    box-shadow: rgba(0, 0, 0, 0.65) 5px 5px 15px;
 }
 
 .car_description{
-    width: 60vw;
+
+    width: 60%;
     height: 100%;
+    margin: auto;
+  
+    
 }
 
 .header{
@@ -28,10 +36,12 @@
    justify-content: space-between;
 }
 
-
+.car_img{
+    width: 30%;
+}
 
 .car_img img{
-    width: 37vw;
+    width: 100%;
 }
 
 .informations{

@@ -1,0 +1,55 @@
+.grid_container{
+    margin: 10px auto 10px auto;
+    max-width: 900px;
+    max-height: 600px;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    padding: 30px;
+}
+
+.grid_item{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.grid_item label{
+    font-size: 24px;
+    color: #8b8383;
+}
+
+.grid_item input{
+    text-align: center;
+    font-size: 18px;
+    height: 42px;
+    border-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.form_container{
+    border: 2px solid var(--grey);
+    border-radius: 20px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.calculate_button{
+    text-align: center;
+}
+.calculate_button button{
+    margin: 10px auto 5px auto;
+    padding: 10px 20px 10px 20px;
+    background: linear-gradient(45deg, #c69cdf, #8a7bdf);
+    font-size: 32px;
+
+}
+
+
+
+@media screen and (max-width:992px) {
+    .grid_container{
+        grid-template-columns: 1fr;
+    }
+}

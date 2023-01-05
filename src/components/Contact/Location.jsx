@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './footer.module.css'
+import classes from './contact.module.css'
 const Location = () => {
   return (
     <div className={classes.map}>
