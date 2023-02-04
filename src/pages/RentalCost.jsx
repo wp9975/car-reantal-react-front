@@ -10,7 +10,7 @@ const RentalCost = () => {
   return (
     <div>
         <CarCard image={carItem.imgSrc} brand={carItem.brand} model={carItem.model} category={carItem.category} year={carItem.year} fuel={carItem.fuel} type={carItem.type} gearbox={carItem.gearbox} fuelConsumption={carItem.fuelConsumption}/>
-        <Calculator fuelConsumption={carItem.fuelConsumption}/>
+        <Calculator fuelConsumption={carItem.fuelConsumption} category={carItem.category}/>
     </div>
   )
 }

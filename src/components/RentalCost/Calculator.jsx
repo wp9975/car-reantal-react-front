@@ -3,16 +3,20 @@ import classes from "./calculator.module.css";
 import Results from "./subcomponents/Results";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { rentalCalculate } from "../../functions/RentalCalculate";
 
 const Calculator = (props) => {
   const [rentalDate, setRentalDate] = useState(new Date());
   const [returnDate, setReturnDate] = useState(new Date());
   const [dLicenseYear, setdLicenseYear] = useState(new Date());
+  const [results, setResults] = useState();
 
   const currentDate = new Date();
 
   const handleCalculateRentalPrice = () => {
-
+    setResults(
+      rentalCalculate(rentalDate, returnDate, 300, dLicenseYear, 100, props.category, props.fuelConsumption)
+    )
   }
 
 
@@ -70,7 +74,7 @@ const Calculator = (props) => {
           </div>
       </form>
 
-      {/* <Results days="17" price="100" milage="1500" totalPrice="1700" /> */}
+      {/* {results ? (<Results days={rentDays} price={priceNetto} milage="1500" totalPrice={priceBrutto} />) : null } */}
     </div>
   );
 };
